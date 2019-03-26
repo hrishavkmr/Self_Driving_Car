@@ -15,5 +15,5 @@ The network takes as input the frame of the frontal camera ( a roof-mounted came
 * PIL
 * Python 3
 
-For the purpose of simulation, i have used [Udacity simulator](https://github.com/udacity/self-driving-car-sim)
+For the purpose of simulation, i have used [Udacity simulator](https://github.com/udacity/self-driving-car-sim).
 To run this, start simulator in autonomous mode, and run on terminal/cmd ``` python drive_car.py ```
