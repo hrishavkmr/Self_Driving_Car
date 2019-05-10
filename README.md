@@ -14,6 +14,18 @@ The network takes as input the frame of the frontal camera ( a roof-mounted came
 * openCV
 * PIL
 * Python 3
+* imgaug
 
 For the purpose of simulation and training the neural network, i have used [Udacity simulator](https://github.com/udacity/self-driving-car-sim).
 To run this, start simulator in autonomous mode, and run on terminal/cmd ``` python drive_car.py ```
+
+# Dataset
+The dataset consists of images (captured from the simulator) and steering angle. [Dataset link](https://github.com/hrishavkmr/track)
+
+# Data Augmentation
+* After	selecting	the	final	set	of	frames,	we	augment	the	data	by	adding	artificial	shifts	and	rotations to	teach	the	network	how	to	recover	from	a	poor	position	or	orientation.	
+* Data	Augmentation techiques :	Zoom,	Width	shift,	Heightshift,	Image	brightness	and	Flipped	image.	
+* All	of	these	are	implemented	in	order	to	diversify our dataset so that car moves more acuurately and smoothly.
+
+# Model (CNN architecture)
+![alt text](https://github.com/hrishavkmr/Self_Driving_Car/blob/master/Model.PNG)
